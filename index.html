@@ -7,6 +7,7 @@
   <title>Youth Inquiry Network</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
   <script src="script.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11/lib/typed.min.js"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&family=Lexend:wght@100..900&display=swap" rel="stylesheet">
@@ -43,7 +44,20 @@
     
         <main class="hero-section">
             <div class="hero-left">
-                <h1>Empowering High Schoolers to become Researchers</h1>
+                <h1>Empowering High Schoolers to become <span id="typed-text"></span></h1>
+          			<script>
+          				var typed = new Typed("#typed-text",{
+          					strings:["Researchers",
+          							 "Collaborators",
+          							 "Communicators",
+          							 "Thinkers"],
+          					typeSpeed: 40,
+          					backSpeed: 40,
+          					backDelay: 1250,
+          					loop: true,
+          					smartBackspace : false,
+          				});
+          			</script>
                 <p class="subhead">At the Youth Inquiry Network, our mission is simple yet profound: to empower high school students like you to become confident researchers, critical thinkers, and effective communicators.</p>
                 <a class="primary-cta" href="#">Join Us</a>
                 <a class="secondary-cta" href="#">Program Registration</a>
