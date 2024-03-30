@@ -95,7 +95,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 5em;
+    margin-bottom: 7em;
 }
 
 .header-left {
@@ -185,7 +185,7 @@ nav a:hover {
 h1 {
     font-size: 4rem;
     line-height: 1.2em;
-    margin-bottom: 0.5em;
+    margin-bottom: 0.75em;
     font-family: "Lexend Deca";
     font-weight: 600;
 }
