@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Youth Inquiry Network</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <script src="script.js" defer></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header>
+            <a href="index.html">
+                <div class="header-left">
+                    <img src="svgs/logo.svg" alt="website logo">
+                    <p class="logo-text">YOUTH INQUIRY NETWORK</p>
+                </div>
+            </a>
+            
+            <nav>
+                <ul class="sidebar">
+                    <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" fill="#ffffff" height="48" viewBox="0 96 960 960" width="48"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="donate.html">Donate to Us</a></li>
+                    <li><a href="index2.html">Our Programs</a></li>
+                    <li><a href="#join-us">Join Us</a></li>
+                </ul>
+                <ul>
+                    <li class="hideOnMobile"><a href="index.html">Home</a></li>
+                    <li class="hideOnMobile"><a href="donate.html">Donate to Us</a></li>
+                    <li class="hideOnMobile"><a href="index2.html">Our Programs</a></li>
+                    <li class="hideOnMobile"><a href="#join-us">Join Us</a></li>
+                    <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 96 960 960" fill="#fff" width="48"><path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg></a></li>
+                </ul>
+            </nav>
+        </header>
+	
+
+	<img class="bg-image bg2" src="pngs/bg.png" alt="">
+
+	<h2>What We Offer</h2>
+	<main class="programs">
+		<div class="carousel carousel-mentorship">
+			<div class="heading-svg">
+				<h3>Mentorship</h3>
+				<img src="svgs/mentorship.svg" alt="">
+			</div>
+			<div class="mentorship-body">
+				<div class="sub-body">
+					<!-- <img src="pngs/icon_signpost.png" alt="signpost" class="sub-icon"> -->
+					<h4>Guidance</h4>
+					<p>Get guidance through each stage of the research paper publication process, to empower yourself in your scholarly pursuits.</p>
+				</div>
+				<div class="sub-body">
+					<!-- <img src="pngs/icon_brush.png" alt="signpost" class="sub-icon"> -->
+					<h4>Creativity</h4>
+					<p>Unleash your creativity through our guidance, and transform your research into a captivating format for science fair projects, presentations, and more!</p>
+				</div>
+				<div class="sub-body">
+					<!-- <img src="pngs/icon_compass.png" alt="signpost" class="sub-icon"> -->
+					<h4>Planning</h4>
+					<p>Plot your path for your future, whether it be through discovering your passion in a specific field or learning about opportunities available to you.</p>
+				</div>
+			</div>
+		</div>
+		<div class="carousel carousel-workshops">	
+			<div class="heading-svg">
+				<h3>Workshops</h3>
+				<img src="svgs/workshops.svg" alt="">
+			</div>
+
+			<div class="workshops-body">
+				<div class="sub-body">
+					<h4>Methodology</h4>
+					<p>Learn how to design robust studies, choose the right methodology, and analyze your data for impactful results.</p>
+				</div>
+				<div class="sub-body">
+					<h4>Inspiration</h4>
+					<p>Receive personalized guidance to navigate the complexities of your chosen field and select a relevant topic of research</p>
+				</div>
+				<div class="sub-body">
+					<h4>Planning</h4>
+					<p>Plot your path for your future, whether it be through discovering your passion in a specific field or learning about opportunities available to you.</p>
+				</div>
+			</div>
+		</div>
+
+	</main>
+
+	<footer>
+		<p>© 2024 Youth Inquiry Network. All Rights Reserved.</p>
+		<div class="icons">
+			<img src="svgs/discord.svg" alt="">
+			<img src="svgs/tiktok.svg" alt="">
+			<img src="svgs/instagram.svg" alt="">
+		</div>
+	</footer>
+
+
+	</div>
+</body>
+</html>

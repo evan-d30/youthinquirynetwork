@@ -1,0 +1,560 @@
+/* 1. Use a more-intuitive box-sizing model. */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+* {
+    margin: 0;
+}
+
+/*
+3. Allow percentage-based heights in Figma
+*/
+html,
+body {
+    height: 100%;
+    scroll-behavior: smooth;
+}
+
+/*
+Typographic tweaks!
+4. Add accessible line-height
+5. Improve text rendering
+*/
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* 6. Improve media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+/* 7. Remove built-in form typography styles */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/* 8. Avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+}
+
+p {
+    font-size: 1.3rem;
+}
+
+/* 9. Create a root stacking context */
+#root,
+#__next {
+    isolation: isolate;
+}
+
+/* My CSS */
+
+body {
+    background-color: #0f0f0f;
+    font-family: "Lexend", sans-serif;
+    overflow-x: hidden;
+}
+
+.wrapper {
+    margin: 3em 5em;
+    padding: 0em 3em;
+    max-width: 1650px;
+    margin-inline: auto;
+    position: relative;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5em;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-text {
+    font-size: 1.1rem;
+    width: 180px;
+}
+
+.header-left img {
+    width: 3.5rem;
+    margin-right: 1em;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    width: 100%;
+}
+
+nav ul li {
+    margin: 1em;
+}
+
+nav a:hover {
+    color: gray;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0.106);
+    backdrop-filter: blur(30px);
+    box-shadow: -10px 0 -10px #171717b1;
+    display: none;
+    flex-direction: column;
+}
+
+.menu-button {
+    display: none;
+}
+
+@media(max-width: 876px) {
+    .hideOnMobile {
+        display: none;
+    }
+
+    .menu-button {
+        display: block;
+    }
+}
+
+@media(max-width: 400px) {
+    .sidebar {
+        width: 100%;
+    }
+}
+
+.hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem;
+    margin-bottom: 10em;
+}
+
+@media(max-width: 1000px) {
+    .hero-section {
+        flex-wrap: wrap;
+        justify-content: center;
+    }  
+}
+
+.hero-left {
+    width: 950px;
+    margin-top: 1em;
+}
+
+h1 {
+    font-size: 4rem;
+    line-height: 1.2em;
+    margin-bottom: 0.5em;
+    font-family: "Lexend Deca";
+    font-weight: 600;
+}
+
+.bg-image {
+    position: absolute;
+    z-index: -100;
+}
+
+.hero-left img {
+    top: -500px;
+    right: 500px
+}
+
+/* .waves {
+    right: -500px;
+    top: -150px;
+} */
+
+@media(max-width: 1200px) {
+    .waves {
+        top: 30px;
+        right: -350px;
+    }
+}
+
+.subhead {
+    margin-bottom: 2em;
+}
+
+.primary-cta {
+    display: inline-flex;
+    align-items: center;
+    flex-basis: 1em;
+    background: rgb(151, 157, 205);
+    background: linear-gradient(160deg, rgba(151, 157, 205, 0.33) 0%, rgba(14, 199, 255, 0.6) 100%);
+    border-radius: 5em;
+    padding: 0.5em 2em;
+    border: 2px solid #587DDB;
+    margin-right: 1em;
+}
+
+.secondary-cta {
+    display: inline-flex;
+    align-items: center;
+    flex-basis: 1em;
+    background: rgb(35, 76, 179);
+    background: linear-gradient(52deg, rgba(35, 76, 179, 0.733) 0%, rgba(34, 185, 236, 0.59) 100%);
+    border-radius: 5em;
+    padding: 0.5em 2em;
+    border: 2px solid #587DDB;
+    margin: 2em 0em;
+}
+
+.pillars {
+    margin-bottom: 15em;
+}
+
+h2 {
+    text-align: center;
+    font-size: 3.5rem;
+    margin: 1em;
+    background: linear-gradient(to right, #f32170, #ff6b08, #cf23cf, #eedd44);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.pillars-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 2rem;
+    position: relative;
+}
+
+.pillars p {
+    font-size: 1.2rem;
+}
+
+.pillars img {
+    position: absolute;
+    z-index: -1;
+    top: 350px;
+    left: -30%;
+    opacity: 50%;
+}
+
+h3 {
+    font-size: 2.7rem;
+    font-weight: 500;
+    margin: 0.5em;
+    text-align: center;
+}
+
+.inclusivity,
+.innovation,
+.collaboration {
+    background: red;
+    padding: 2.5em;
+    border-radius: 20px;
+}
+
+.inclusivity {
+    background: rgb(114, 83, 199);
+    background: linear-gradient(152deg, rgba(114, 83, 199, 0.808) 0%, rgba(255, 255, 255, 0.367) 100%);
+    box-shadow: 0 0 15px#7253C7;
+}
+
+.innovation {
+    background: rgb(248, 80, 27);
+    background: linear-gradient(152deg, rgba(248, 79, 27, 0.819) 0%, rgba(255, 255, 255, 0.336) 100%);
+    box-shadow: 0 0 15px #F8501B;
+}
+
+.collaboration {
+    background: rgb(255, 10, 201);
+    background: linear-gradient(152deg, rgba(255, 10, 202, 0.795) 0%, rgba(255, 255, 255, 0.353) 100%);
+    box-shadow: 0 0 15px #FF0AC9;
+}
+
+.join-community {
+    display: grid;
+    gap: 3rem;
+    place-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    margin-top: 5em;
+    margin-bottom: 15em;
+}
+
+.join-discord {
+    flex: 0 0 auto;
+}
+
+.join-community h3 {
+    text-align: start;
+    font-size: 2.3rem;
+}
+
+.join-community p {
+    margin-left: 4em;
+}
+
+.meaningful-connections-heading,
+.affordable-solutions-heading {
+    display: flex;
+}
+
+.offerings {
+    position: relative;
+    margin-bottom: 10em;
+}
+
+.offerings >.bg-image {
+    left: -500px;
+    top: -500px;
+    opacity: 50%;
+}
+
+.offerings p {
+    margin-bottom: 1.5em;
+}
+
+.carousel-container {
+    display: grid;
+    grid-auto-flow: column; 
+    grid-auto-columns: 61%; 
+    gap: 1rem;
+    padding: 1rem;
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+}
+
+.carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    background: rgba(42, 43, 47, 0.412);
+    border-radius: 15px;
+    gap: 3rem;
+}
+
+.carousel-container h4 {
+    font-size: 1.3rem;
+    margin: 0.5em 0em;
+    font-weight: 600;
+}
+
+.carousel-container p {
+    font-size: 1.05rem;
+    font-weight: 300;
+}
+
+.heading-svg {
+    display: grid;
+    place-items: center;
+    gap: 2rem;
+}
+
+.ini-btn {
+    background: linear-gradient(160deg, rgba(151, 157, 205, 0.33) 0%, rgba(14, 199, 255, 0.6) 100%);
+    padding: 0.5em 1em;
+    border-radius: 500px;
+    font-size: 1rem;
+}
+
+@media(max-width: 1300px) {
+    .carousel {
+        flex-direction: column;
+        justify-content: flex-start;;
+    }
+}
+
+@media(max-width: 700px) {
+    .carousel-container {
+        grid-auto-columns: 81%; 
+    }
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    margin-top: 5em;
+}
+
+footer p {
+    font-size: 0.8rem;
+    font-weight: 300;
+}
+
+footer::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: white;
+    top: -20px;
+}
+
+.icons {
+    display: flex;
+    gap: 1em;
+}
+
+.icons>img {
+    width: 25px;
+}
+
+@media(max-width: 550px) {
+    h1 {
+        font-size: 3rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    .wrapper {
+        margin: 1em;
+        padding: 1em;
+    }
+
+    .logo-text {
+        font-size: 0.7rem;
+    }
+
+    .header-left img {
+        width: 40px;
+    }
+
+    header {
+        margin-bottom: 1em;
+    }
+
+    .pillars {
+        margin-bottom: 10em;
+    }
+
+    .pillars-grid {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+
+    .programs {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+
+    .pillars p {
+        font-size: 1rem;
+    }
+
+    .join-community {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        margin-bottom: 10em;
+    }
+
+    .join-community h3 {
+        font-size: 1.5rem;
+    }
+
+    .join-community p {
+        margin-left: 0;
+        font-size: 0.9rem;
+    }
+
+    .join-discord {
+        width: 300px;
+    }
+
+    .meaningful-connections-heading, .affordable-solutions-heading img {
+        width: 30px;
+    }
+
+    .icons > img {
+        width: 15px;
+    }
+
+    .carousel-container {
+        grid-auto-columns: 91%;
+        margin: 0;
+        padding: 1em 0em;
+    }
+
+    .carousel-container p {
+        font-size: 0.7rem;
+        font-weight: 300;
+    }
+
+    footer p {
+        font-size: 0.6rem;
+        font-weight: 300;
+        margin-right: 1em;
+    }
+
+    .bg2 {
+        left: -100px;
+    }
+
+}
+
+
+.programs {
+    display: grid;
+    gap: 2rem;
+    margin: 1rem;
+}
+
+.bg2 {
+    left: -600px;
+}
+
+.programs h4 {
+    font-size: 1.7rem;
+    font-weight: 600;
+    margin: 0.5em 0em;
+}
+
+.donation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
