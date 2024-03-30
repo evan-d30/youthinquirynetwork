@@ -285,24 +285,38 @@ h3 {
     background: red;
     padding: 2.5em;
     border-radius: 20px;
+	transition: all linear 0.35s;
 }
 
 .inclusivity {
     background: rgb(114, 83, 199);
     background: linear-gradient(152deg, rgba(114, 83, 199, 0.808) 0%, rgba(255, 255, 255, 0.367) 100%);
     box-shadow: 0 0 15px#7253C7;
+	
+}
+
+.inclusivity:hover{
+	box-shadow: 0 0 30px#7253C7;
 }
 
 .innovation {
     background: rgb(248, 80, 27);
     background: linear-gradient(152deg, rgba(248, 79, 27, 0.819) 0%, rgba(255, 255, 255, 0.336) 100%);
-    box-shadow: 0 0 15px #F8501B;
+    box-shadow: 0 0 15px#F8501B;
+}
+
+.innovation:hover{
+	box-shadow: 0 0 30px #F8501B;
 }
 
 .collaboration {
     background: rgb(255, 10, 201);
     background: linear-gradient(152deg, rgba(255, 10, 202, 0.795) 0%, rgba(255, 255, 255, 0.353) 100%);
     box-shadow: 0 0 15px #FF0AC9;
+}
+
+.collaboration:hover{
+	box-shadow: 0 0 30px #FF0AC9;
 }
 
 .join-community {
