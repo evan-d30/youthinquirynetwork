@@ -628,6 +628,22 @@ footer::before {
     margin: 0.5em 0em;
 }
 
+
+.sub-body {
+  padding: 1.4rem;
+  padding-left: 10rem;
+}
+
+.sub-icon {
+  position: absolute;
+  transform: translate(-140%, 50%)
+}
+
+#lightbulb {
+	transform: translate(-180%,50%);
+}
+
+
 .donation {
     display: flex;
     align-items: center;
