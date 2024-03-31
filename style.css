@@ -430,6 +430,9 @@ h3 {
         flex-direction: column;
         justify-content: flex-start;;
     }
+    #offright {
+		display:none;
+	}
 }
 
 @media(max-width: 700px) {
