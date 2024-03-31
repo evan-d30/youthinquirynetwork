@@ -104,6 +104,22 @@ header {
     justify-content: center;
 }
 
+@keyframes fade-down {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px) scale(0.9);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0px) scale(1);
+  }
+}
+
+.animate-down {
+  animation: fade-down 1s;
+}
+
 .logo-text {
     font-size: 1.1rem;
     width: 180px;
