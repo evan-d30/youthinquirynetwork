@@ -137,11 +137,13 @@ nav ul {
 }
 
 nav ul li {
-    margin: 1em;
+  margin: 1em;
+  text-shadow: 0px 0px 5px #FFFFFF;
+  transition : all ease 0.5s;
 }
 
-nav a:hover {
-    color: gray;
+nav ul li:hover {
+  text-shadow: 0px 0px 20px #FFFFFF;
 }
 
 .sidebar {
