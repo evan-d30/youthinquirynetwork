@@ -7,6 +7,7 @@
   <title>Youth Inquiry Network</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
   <script src="script.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11/lib/typed.min.js"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&family=Lexend:wght@100..900&display=swap" rel="stylesheet">
@@ -43,7 +44,20 @@
     
         <main class="hero-section">
             <div class="hero-left">
-                <h1>Empowering High Schoolers to become Researchers</h1>
+                <h1>Empowering High Schoolers to become <span id="typed-text"></span></h1>
+          			<script>
+          				var typed = new Typed("#typed-text",{
+          					strings:["Researchers",
+          							 "Collaborators",
+          							 "Communicators",
+          							 "Thinkers"],
+          					typeSpeed: 40,
+          					backSpeed: 40,
+          					backDelay: 1250,
+          					loop: true,
+          					smartBackspace : false,
+          				});
+          			</script>
                 <p class="subhead">At the Youth Inquiry Network, our mission is simple yet profound: to empower high school students like you to become confident researchers, critical thinkers, and effective communicators.</p>
                 <a class="primary-cta" href="#">Join Us</a>
                 <a class="secondary-cta" href="#">Program Registration</a>
@@ -72,7 +86,7 @@
                     <p>Collaboration is the power of collective effort and shared knowledge in achieving greater outcomes than what could be accomplished individually hence why we aim to build an inclusive community. We promote the importance of teamwork, communication, and the exchange of ideas among students, mentors, and the broader scientific community.</p>
                 </div>
             </div>
-            <img src="pngs/pillars-bg.png" alt="">
+            <img src="pngs/p.png" alt="" id="pillarsbg">
         </main>
         
         <h2>Join Our Growing Community</h2>
@@ -101,6 +115,7 @@
         <main id="join-us" class="offerings">
             <h2>Join The Initiative</h2>
             <img class="bg-image" src="pngs/bg.png" alt="">
+	    <img id="offright" src="pngs/offright.png" alt="">
             <div class="carousel-container">
                 <div class="carousel mentorship-o">
                     <div class="heading-svg">
@@ -160,9 +175,15 @@
         <footer>
             <p>© 2024 Youth Inquiry Network. All Rights Reserved.</p>
             <div class="icons">
-                <img src="svgs/discord.svg" alt="">
-                <img src="svgs/tiktok.svg" alt="">
-                <img src="svgs/instagram.svg" alt="">
+              <a href="https://discord.gg/w7vuHKzeQu">
+			          <img src="svgs/discord.svg" alt="">
+		          </a>
+              <a href="https://www.tiktok.com/@youthinquirynetwork">
+			          <img src="svgs/tiktok.svg" alt="">
+		          </a>
+              <a href="https://www.instagram.com/youthinquirynetwork/">
+			          <img src="svgs/instagram.svg" alt="">
+		          </a>
             </div>
         </footer>
 
