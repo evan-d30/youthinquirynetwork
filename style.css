@@ -566,6 +566,10 @@ footer::before {
         left: -100px;
     }
 
+    #offright {
+	display:none;
+    }
+
 }
 
 
