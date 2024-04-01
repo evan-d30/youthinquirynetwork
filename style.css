@@ -227,6 +227,10 @@ h1 {
     z-index: -100;
 }
 
+.heading-svg {
+	margin-left: 6em;
+}
+
 .hero-left img {
     top: -500px;
     right: 500px
