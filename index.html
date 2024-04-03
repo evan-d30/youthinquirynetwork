@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html >
 
 <head>
   <meta charset="utf-8">
@@ -10,9 +10,7 @@
   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11/lib/typed.min.js"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&family=Lexend:wght@100..900&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&family=Lexend:wght@100..900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
     integrity="sha512-RfPrnLPRLvTovR1PfRqKho09dIgBpU7vR/mfo4xEIbhXexw1nBvheP5P8fhJOpyIeIam5q2D0DqKYl0HQ/E26w=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -20,199 +18,181 @@
 
 <body>
 
-  <div class="wrapper">
-    <header class="animate-down">
-      <a href="index.html">
-        <div class="header-left">
-          <img src="svgs/logo.svg" alt="website logo">
-          <p class="logo-text">YOUTH INQUIRY NETWORK</p>
-        </div>
-      </a>
+    <div class="wrapper">
+        <header class="animate-down">
+            <a href="index.html">
+                <div class="header-left">
+                    <img src="svgs/logo.svg" alt="website logo">
+                    <p class="logo-text">YOUTH INQUIRY NETWORK</p>
+                </div>
+            </a>
+            
+            <nav>
+                <ul class="sidebar">
+                    <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" fill="#ffffff" height="48" viewBox="0 96 960 960" width="48"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="donate.html">Donate to Us</a></li>
+                    <li><a href="index2.html">Our Programs</a></li>
+                    <li><a href="#join-us">Join Us</a></li>
+                </ul>
+                <ul>
+                    <li class="hideOnMobile"><a href="index.html">Home</a></li>
+                    <li class="hideOnMobile"><a href="donate.html">Donate to Us</a></li>
+                    <li class="hideOnMobile"><a href="index2.html">Our Programs</a></li>
+                    <li class="hideOnMobile"><a href="#join-us">Join Us</a></li>
+                    <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 96 960 960" fill="#fff" width="48"><path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg></a></li>
+                </ul>
+            </nav>
+        </header>
+    
+        <main class="hero-section">
+            <div class="hero-left">
+                <h1>Empowering High Schoolers to become <span id="typed-text"></span></h1>
+          			<script>
+          				var typed = new Typed("#typed-text",{
+          					strings:["Researchers",
+          							 "Collaborators",
+          							 "Communicators",
+          							 "Thinkers"],
+          					typeSpeed: 40,
+          					backSpeed: 40,
+          					backDelay: 1250,
+          					loop: true,
+          					smartBackspace : false,
+          				});
+          			</script>
+                <p class="subhead">At the Youth Inquiry Network, our mission is simple yet profound: to empower high school students like you to become confident researchers, critical thinkers, and effective communicators.</p>
+                <a class="primary-cta" href="#">Join Us</a>
+                <a class="secondary-cta" href="#">Program Registration</a>
+                <img class="bg-image" src="pngs/bg.png" alt="">
+            </div>
+    
+            <div class="hero-right">
+                <!-- <img class="waves" src="pngs/hero-right-bg.png" alt=""> -->
+                <img class="ct-com-res" src="pngs/hero-right-bg-modified.png" alt="">
+            </div>   
+        </main>
+    
+        <main id="pillars" class="pillars">
+            <h2>Our Pillars</h2>
+            <div class="pillars-grid">
+                <div class="inclusivity">
+                    <h3>Inclusivity</h3>
+                    <p>Inclusivity is foundational to creating an environment where all students, regardless of their background or resources, feel welcomed, valued, and supported. We acknowledge the importance of accessibility and diversity within the STEM field and strive to ensure that every high school student has the opportunity to participate, learn, and contribute.</p>
+                </div>
+                <div class="innovation">
+                    <h3>Innovation</h3>
+                    <p>Innovation is at the core of advancing the STEM fields, promoting the pursuit of new knowledge, technologies, and solutions to complex problems. Our commitment is to encourage and empower students to exercise creative thinking, problem-solving, and the exploration of uncharted territories in research.</p>
+                </div>
+                <div class="collaboration">
+                    <h3>Collaboration</h3>
+                    <p>Collaboration is the power of collective effort and shared knowledge in achieving greater outcomes than what could be accomplished individually hence why we aim to build an inclusive community. We promote the importance of teamwork, communication, and the exchange of ideas among students, mentors, and the broader scientific community.</p>
+                </div>
+            </div>
+            <img src="pngs/p.png" alt="" id="pillarsbg">
+        </main>
+        
+        <h2>Join Our Growing Community</h2>
+        <main class="join-community">
+            <a href="https://discord.gg/w7vuHKzeQu"><img class="join-discord" src="pngs/join-discord.png" alt=""></a>
+            <div>
+                <div class="meaningful-connections">
+                    <div class="meaningful-connections-heading">
+                        <img src="svgs/meaningful-connections.svg" alt="">
+                        <h3>Meaningful Connections</h3>
+                    </div>
+                    <p>Meet genuinely excited individuals from all across the world and engage in exciting STEM projects and activities.</p>
+                </div>
+                <div class="affordable-solutions">
+                    <div class="affordable-solutions-heading">
+                        <img src="svgs/affordable-solutions.svg" alt="">
+                        <h3>Affordable Solutions</h3>
+                    </div>
+                    <p>We offer affordable solutions to overcome financial barriers and support student research publication.</p>
+                </div>
+            </div>
+        </main>
 
-      <nav>
-        <ul class="sidebar">
-          <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" fill="#ffffff" height="48"
-                viewBox="0 96 960 960" width="48">
-                <path
-                  d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z" />
-              </svg></a></li>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="">About Us</a></li>
-          <li><a href="">Our Programs</a></li>
-          <li><a href="">Join Us</a></li>
-        </ul>
-        <ul>
-          <li class="hideOnMobile"><a href="index.html">Home</a></li>
-          <li class="hideOnMobile"><a href="">About Us</a></li>
-          <li class="hideOnMobile"><a href="">Our Programs</a></li>
-          <li class="hideOnMobile"><a href="">Join Us</a></li>
-          <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="48"
-                viewBox="0 96 960 960" fill="#fff" width="48">
-                <path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z" />
-              </svg></a></li>
-        </ul>
-      </nav>
-    </header>
+        <!-- <iframe class="donation" src="https://hcb.hackclub.com/donations/start/youth-inquiry-network" style="border:none;" name="donateFrame" scrolling="yes" frameborder="0" marginheight="0px" marginwidth="0px" height="512px" width="512px" allowfullscreen></iframe> -->
+    
+        <main id="join-us" class="offerings">
+            <h2>Join The Initiative</h2>
+            <img class="bg-image" src="pngs/bg.png" alt="">
+	    <img id="offright" src="pngs/offright.png" alt="">
+            <div class="carousel-container">
+                <div class="carousel mentorship-o">
+                    <div class="heading-svg">
+                        <h3>Be a Mentor</h3>
+                        <img src="svgs/mentorship.svg" alt="">
+                       
+                    </div>
+                    <div>
+                        <h4>Make a Global Impact</h4>
+                        <p>Are you a university student passionate about science, technology, engineering, and math (STEM)?  The Youth Inquiry Network is looking for YOU!  Become a mentor and empower high school students to become confident researchers and effective communicators.</p>
+                        <h4>Develop Your Skills</h4>
+                        <p>This is an incredible opportunity to develop your own skills as well. You'll gain valuable experience in mentorship, research guidance, and education, all while strengthening your resume. Upon completing the mentorship program, you'll receive a certificate in recognition of your contribution and the expertise you've gained..</p>
+                        <h4>Leave a Lasting Legacy</h4>
+                        <p>Most importantly, you'll have a tangible impact on the lives of your students. By helping them conduct and publish original research, you'll be leaving a lasting legacy and fostering the next generation of scientific discovery.</p>
+                        <a class="ini-btn" href="#">Join Now</a>
+                    </div>
+                </div>
+                <div class="carousel workshops-o">
+                    <div class="heading-svg">
+                        <h3>Volunteer for Us</h3>
+                        <img src="svgs/workshops.svg" alt="">
+                        
+                    </div>
+                    
+                    <div>
+                        <h4>Shape Future Leaders</h4>
+                        <p>Empower the next generation of STEM leaders! Equip high school students with the skills and confidence they need to thrive in research.  Your contribution will make a meaningful impact, inspiring them to achieve their academic and professional dreams.</p>
+                        <h4>Develop Your Skills</h4>
+                        <p>YIN isn't just about impacting students.  You'll gain valuable experience yourself.  Develop leadership, communication, and mentoring skills that will benefit you in diverse contexts and future careers.</p>
+                        <h4>Connect with a Passionate Community</h4>
+                        <p>Join the YIN network!  Connect with like-minded individuals who share your passion for education, research, and youth empowerment.  This supportive community provides a platform for collaboration and growth.</p>
+                        <a class="ini-btn" href="#">Join Now</a>
+                    </div>
+                </div>
+                <div class="carousel collaboration-o">
+                    <div class="heading-svg">
+                        <h3>Become Chapter Lead</h3>
+                        <img src="svgs/collaboration.svg" alt="">
+                        
+                    </div>
+    
+                    <div>
+                        <h4>Champion Youth Research</h4>
+                        <p>Chapter leaders are the driving force behind YIN's local impact.  They bring the excitement of youth research to their communities by organizing YIN events.  Lead the charge in inspiring the next generation of STEM leaders!</p>
+                        <h4>Be the Local Hero</h4>
+                        <p>Chapter leaders play a crucial role in ensuring smooth event operations. Manage activities within your area and ensure everything runs seamlessly. Collaborate with local YIN Ambassadors to maximize outreach and impact.</p>
+                        <h4>Make a Real Difference</h4>
+                        <p>Join our passionate network and become a changemaker in your community. Shape the future of STEM education by leading the way with YIN!</p>
+                        <a class="ini-btn" href="#">Join Now</a>
+                    </div>
+                </div>
+            </div>
+            
+            
+        </main>
 
-    <main class="hero-section">
+        <footer>
+            <p>© 2024 Youth Inquiry Network. All Rights Reserved.</p>
+            <div class="icons">
+              <a href="https://discord.gg/w7vuHKzeQu">
+			          <img src="svgs/discord.svg" alt="">
+		          </a>
+              <a href="https://www.tiktok.com/@youthinquirynetwork">
+			          <img src="svgs/tiktok.svg" alt="">
+		          </a>
+              <a href="https://www.instagram.com/youthinquirynetwork/">
+			          <img src="svgs/instagram.svg" alt="">
+		          </a>
+            </div>
+        </footer>
 
-      <div class="hero-left">
-        <h1>Empowering High Schoolers to become <span id="typed-text"></span></h1>
-        <script>
-          var typed = new Typed("#typed-text", {
-            strings: ["Researchers",
-              "Collaborators",
-              "Communicators",
-              "Thinkers"],
-            typeSpeed: 40,
-            backSpeed: 40,
-            backDelay: 1250,
-            loop: true,
-            smartBackspace: false,
-          });
-        </script>
-        <p class="subhead">At the Youth Inquiry Network, our mission is simple yet profound: to empower high school
-          students like you to become confident researchers, critical thinkers, and effective communicators.</p>
-        <a class="effect effect-1" id="primary-cta" href="#">Join Us</a>
-        <a class="effect effect-2" id="secondary-cta" href="#">Program Registration</a>
-        <img class="bg-image" src="pngs/bg.png" fetchpriority="high" alt="">
-      </div>
-
-      <div class="hero-right">
-        <!-- <img class="bg-image waves" src="pngs/hero-right-bg.png" alt=""> -->
-        <img class="ct-com-res" src="pngs/hero-right-bg-modified.png" alt="">
-      </div>
-    </main>
-
-    <main class="pillars">
-      <h2>Our Pillars</h2>
-      <div class="pillars-grid">
-        <div class="inclusivity">
-          <h3>Inclusivity</h3>
-          <p>Inclusivity is foundational to creating an environment where all students, regardless of their background
-            or resources, feel welcomed, valued, and supported. We acknowledge the importance of accessibility and
-            diversity within the STEM field and strive to ensure that every high school student has the opportunity to
-            participate, learn, and contribute.</p>
-        </div>
-        <div class="innovation">
-          <h3>Innovation</h3>
-          <p>Innovation is at the core of advancing the STEM fields, promoting the pursuit of new knowledge,
-            technologies, and solutions to complex problems. Our commitment is to encourage and empower students to
-            exercise creative thinking, problem-solving, and the exploration of uncharted territories in research.</p>
-        </div>
-        <div class="collaboration">
-          <h3>Collaboration</h3>
-          <p>Collaboration is the power of collective effort and shared knowledge in achieving greater outcomes than
-            what could be accomplished individually hence why we aim to build an inclusive community. We promote the
-            importance of teamwork, communication, and the exchange of ideas among students, mentors, and the broader
-            scientific community.</p>
-        </div>
-      </div>
-      <img src="pngs/pillars-bg.png" alt="">
-    </main>
-
-    <h2>Join Our Growing Community</h2>
-    <main class="join-community">
-      <a href="https://discord.gg/w7vuHKzeQu"><img class="join-discord" src="pngs/join-discord.png" alt=""></a>
-      <div>
-        <div class="meaningful-connections">
-          <div class="meaningful-connections-heading">
-            <img src="svgs/meaningful-connections.svg" alt="">
-            <h3>Meaningful Connections</h3>
-          </div>
-          <p>Meet genuinely excited individuals from all across the world and engage in exciting STEM projects and
-            activities.</p>
-        </div>
-        <div class="affordable-solutions">
-          <div class="affordable-solutions-heading">
-            <img src="svgs/affordable-solutions.svg" alt="">
-            <h3>Affordable Solutions</h3>
-          </div>
-          <p>We offer affordable solutions to overcome financial barriers and support student research publication.</p>
-        </div>
-      </div>
-    </main>
-
-    <!-- <iframe class="donation" src="https://hcb.hackclub.com/donations/start/youth-inquiry-network" style="border:none;" name="donateFrame" scrolling="yes" frameborder="0" marginheight="0px" marginwidth="0px" height="512px" width="512px" allowfullscreen></iframe> -->
-
-    <main class="offerings">
-      <h2>What We Offer</h2>
-      <img class="bg-image" src="pngs/bg.png" alt="">
-      <div class="carousel-container">
-        <div class="carousel mentorship-o">
-          <div class="heading-svg">
-            <h3>Mentorship</h3>
-            <img src="svgs/mentorship.svg" alt="">
-          </div>
-          <div>
-            <h4>Scholar Inquiry Program</h4>
-            <p>This program pairs students with mentors to guide them through the entire research paper process, from
-              writing to publication. It fosters a supportive environment where students can explore their curiosity and
-              contribute their findings to academia.</p>
-            <h4>Showcasing Mentorship</h4>
-            <p>This program goes beyond publication, offering guidance on presenting research or converting it into
-              science fair projects. Mentors help students find the best way to share their work for maximum impact.</p>
-            <h4>Career Pathway</h4>
-            <p>This program isn't just about publishing research. It also helps students pick a major or research area
-              they love by guiding them through a research project. This fosters a connection between their academic
-              interests and future careers.</p>
-          </div>
-        </div>
-        <div class="carousel workshops-o">
-          <div class="heading-svg">
-            <h3>Workshops</h3>
-            <img src="svgs/workshops.svg" alt="">
-          </div>
-
-          <div>
-            <p>At the Youth Inquiry Network, we're committed to equipping our students with the tools, knowledge, and
-              inspiration they need to excel in their research journey. Our carefully curated workshops are designed to
-              do just that—by offering expert research advice and connecting you with seasoned professionals from
-              various fields. Here's what you can expect:</p>
-            <h4>Expert Research Guidance</h4>
-            <p>This program offers one-on-one support throughout your research journey. They'll help you brainstorm
-              ideas, pick the perfect approach (methodology), and analyze your findings to craft a powerful paper.</p>
-            <h4>Professional Insights</h4>
-            <p>This program brings research to life! You'll gain insights from industry experts and learn how research
-              drives progress in STEM fields (Science, Technology, Engineering, and Math).</p>
-          </div>
-        </div>
-        <div class="carousel collaboration-o">
-          <div class="heading-svg">
-            <h3>Collaboration</h3>
-            <img src="svgs/collaboration.svg" alt="">
-          </div>
-
-          <div>
-            <p>Our Review Program is strategically divided into two key subsections to cater to diverse research needs:
-              Peer Review and Professional Review.</p>
-            <h4>Peer Review Section</h4>
-            <p>This program understands the importance of students learning from each other. They might connect you with
-              other students for peer review, which is where students get feedback on their work from other students.
-            </p>
-            <h4>Professional Review</h4>
-            <p>This program pairs you with a mentor to get feedback on your research paper, but only after you've
-              completed at least half of it. This ensures you have a solid foundation before receiving expert guidance.
-            </p>
-          </div>
-        </div>
-      </div>
+    </div>
 
 
-    </main>
-
-    <footer>
-      <p>© 2024 Youth Inquiry Network. All Rights Reserved.</p>
-      <div class="icons">
-        <img src="svgs/discord.svg" alt="">
-        <img src="svgs/tiktok.svg" alt="">
-        <img src="svgs/instagram.svg" alt="">
-      </div>
-    </footer>
-
-  </div>
-
-  <script src="https://kit.fontawesome.com/5e4348f148.js" crossorigin="anonymous"></script>
 
 </body>
 
