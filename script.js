@@ -11,7 +11,7 @@ function hideSidebar() {
 document.getElementById('primary-cta').addEventListener('click', function() {
   var currentPosition = window.scrollY;
   window.scrollBy({
-    top: window.innerHeight * 2.9 - currentPosition,
+    top: window.innerHeight * 2.8 - currentPosition,
     behavior: 'smooth'
   });
 });
