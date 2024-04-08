@@ -138,12 +138,19 @@ nav ul {
 
 nav ul li {
   margin: 1em;
-  text-shadow: 0px 0px 5px #FFFFFF;
-  transition : all ease 0.5s;
+  /* text-shadow: 0px 0px 5px #FFFFFF; */
+  transition : all ease 0.2s;
 }
 
-nav ul li:hover {
-  text-shadow: 0px 0px 20px #FFFFFF;
+.hover-glow {
+  transition: all 0.2s ease-in-out;
+}
+
+.hover-glow:hover {
+  text-shadow: 0px 0px 20px #f32170;
+  box-shadow: 0px 0px 3px 3px #f32170;
+  padding: 0.5em 1em;
+  border-radius: 25px;
 }
 
 .sidebar {
@@ -153,8 +160,8 @@ nav ul li:hover {
     height: 100vh;
     width: 250px;
     z-index: 999;
-    background-color: rgba(255, 255, 255, 0.106);
-    backdrop-filter: blur(30px);
+    background-color: rgb(33, 33, 33);
+    /* backdrop-filter: blur(30px); */
     box-shadow: -10px 0 -10px #171717b1;
     display: none;
     flex-direction: column;
@@ -164,7 +171,7 @@ nav ul li:hover {
     display: none;
 }
 
-@media(max-width: 876px) {
+@media(max-width: 950px) {
     .hideOnMobile {
         display: none;
     }
@@ -253,7 +260,7 @@ h1 {
 }
 
 .pillars {
-    margin-bottom: 15em;
+    margin-bottom: 4em;
 }
 
 #pillarsbg {
@@ -316,10 +323,9 @@ h3 {
 .inclusivity,
 .innovation,
 .collaboration {
-    background: red;
-    padding: 2.5em;
-    border-radius: 20px;
-  transition: all linear 0.35s;
+  padding: 2.5em;
+  border-radius: 20px;
+  transition: all 0.2s ease-in-out;
 }
 
 .inclusivity {
@@ -331,6 +337,7 @@ h3 {
 
 .inclusivity:hover{
   box-shadow: 0 0 30px#7253C7;
+  transform: scale(110%);
 }
 
 .innovation {
@@ -341,6 +348,7 @@ h3 {
 
 .innovation:hover{
   box-shadow: 0 0 30px #F8501B;
+  transform: scale(110%)
 }
 
 .collaboration {
@@ -351,6 +359,7 @@ h3 {
 
 .collaboration:hover{
   box-shadow: 0 0 30px #FF0AC9;
+  transform: scale(110%);
 }
 
 .join-community {
@@ -358,8 +367,8 @@ h3 {
     gap: 3rem;
     place-items: center;
     grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
-    margin-top: 5em;
-    margin-bottom: 15em;
+    margin-top: 4em;
+    margin-bottom: 5em;
 }
 
 .join-discord {
@@ -376,7 +385,8 @@ h3 {
 }
 
 .meaningful-connections-heading,
-.affordable-solutions-heading {
+.affordable-solutions-heading, 
+.icon-title {
     display: flex;
 }
 
@@ -407,10 +417,14 @@ h3 {
   }
 }
 
+.icon-title > img {
+  width: 30px;
+}
 
 .offerings {
     position: relative;
     margin-bottom: 10em;
+    margin-top: 10em;
 }
 
 .offerings >.bg-image {
@@ -551,7 +565,7 @@ footer::before {
     }
 
     .pillars {
-        margin-bottom: 10em;
+        margin-bottom: 4em;
     }
 
     .pillars-grid {
@@ -617,9 +631,9 @@ footer::before {
   display:none;
     }
 
-    #earth {
+  #earth {
     --globe-size: 300px;
-      }
+  }
 
 }
 
@@ -781,5 +795,4 @@ footer::before {
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
 }
-
 
