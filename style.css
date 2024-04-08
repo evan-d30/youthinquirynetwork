@@ -380,6 +380,34 @@ h3 {
     display: flex;
 }
 
+#earth {
+  --globe-size: 500px;
+  margin: 2em auto;
+  position: relative;
+  width: var(--globe-size);
+  height: var(--globe-size);
+  border-radius: 50%;
+  background: url("pngs/map.png");
+  /* filter: hue-rotate(40deg); */
+  background-size: calc(2*var(--globe-size));
+  box-shadow: inset 0px -20px 50px 10px #a207e480,
+                    0px 0px 20px 5px #9000ffd5;
+  transform: rotate(10deg);
+  animation: rotate 15s linear infinite;
+
+}
+
+@keyframes rotate {
+  0% {
+    background-position: 0;
+  }
+
+  100% {
+    background-position: calc(2*var(--globe-size));
+  }
+}
+
+
 .offerings {
     position: relative;
     margin-bottom: 10em;
