@@ -234,9 +234,7 @@ h1 {
     z-index: -100;
 }
 
-.heading-svg {
-  margin-left: 6em;
-}
+
 
 .hero-left img {
     top: -500px;
@@ -491,6 +489,7 @@ h3 {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     padding: 2rem;
     background: rgba(15, 15, 15, 0.412);
     border-radius: 15px;
@@ -512,6 +511,7 @@ h3 {
     display: grid;
     place-items: center;
     gap: 2rem;
+
 }
 
 .ini-btn {
@@ -683,6 +683,7 @@ footer::before {
 
 .programs {
     display: grid;
+    grid-template-columns: 1fr 1fr;
     gap: 2rem;
     margin: 1rem;
 }
@@ -700,16 +701,16 @@ footer::before {
 
 .sub-body {
   padding: 1.4rem;
-  padding-left: 10rem;
+
 }
 
 .sub-icon {
   position: absolute;
-  transform: translate(-140%, 50%)
+  transform: translate(-140%, 20%);
 }
 
 #lightbulb {
-  transform: translate(-180%,50%);
+  transform: translate(-180%,10%);
 }
 
 
