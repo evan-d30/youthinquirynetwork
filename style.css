@@ -320,7 +320,9 @@ h3 {
 
 .inclusivity,
 .innovation,
-.collaboration {
+.collaboration,
+.inclusivity_2,
+.innovation_2 {
   padding: 2.5em;
   border-radius: 20px;
   transition: all 0.4s ease-in-out;
@@ -336,6 +338,11 @@ h3 {
 .inclusivity:hover{
   box-shadow: 0 0 30px#7253C7;
   transform: scale(105%);
+}
+
+.inclusivity_2:hover,
+.innovation_2:hover{
+  box-shadow: 0 0 30px black;
 }
 
 .innovation {
@@ -842,4 +849,19 @@ footer::before {
     background: linear-gradient(to right, #ff00628b, #ff2277, #cf23cf);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
+}
+
+#join-gradient {
+    background: linear-gradient(to right, #f30028, #8d00c4);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+.pillars2-grid {
+    display: grid;
+    padding: .5em;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 2rem;
+    position: relative;
 }
