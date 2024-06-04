@@ -1,0 +1,139 @@
+.contact {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 2em;
+}
+
+.left-c {
+    max-width: 500px;
+    display: grid;
+    gap: 1em;
+}
+
+.heading-c {
+    font-size: 4rem;
+    background: linear-gradient(to right, #f32170, #ff6b08, #cf23cf, #eedd44);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.mail-lc {
+    display: flex;
+    width: 20px;
+    height: 37px;
+    gap: 1em;
+}
+
+.right-c {
+    background-color: #181818;
+    border: 3px solid white;
+    border-radius: 15px;
+    padding: 3em 2em;
+    min-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+h5 {
+    font-size: 2rem;
+}
+
+.input-field {
+    padding: 0.7em 3.5em;
+    width: 100%;
+    border-radius: 8px;
+}
+
+.input-field:focus, textarea:focus {
+    outline: none;
+}
+
+textarea {
+    resize: none;
+}
+
+.input-icons {
+    position: relative;
+}
+
+.input-icons img {
+    position: absolute;
+    top: 0.9em;
+    left: 10px;
+}
+
+.name-c {
+    border: 2px solid #7124EF;
+    box-shadow: 3px 5px 8px #7124EF;
+}
+
+.mail-c {
+    border: 2px solid #FF3D00;
+    box-shadow: 3px 5px 8px #FF3D00;
+}
+
+.message-c {
+    border: 2px solid #00FFD1;
+    box-shadow: 3px 5px 8px #00FFD1;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 0.5em 2em;
+    border: 2px solid #FF00A8;
+    border-radius: 5px;
+    box-shadow: 3px 5px 8px #FF00A8;
+}
+
+.submit-btn:hover {
+    cursor: pointer;
+}
+
+.container {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    gap: 12em;
+}
+
+form img {
+    top: 0vh;
+    left: 37vw;
+}
+
+@media (max-width: 525px) {
+    .contact {
+        justify-content: space-between;
+    }
+
+    .heading-c {
+        font-size: 2.7rem;
+        line-height: 3rem;
+    }
+
+    h5 {
+        font-size: 1.5rem;
+    }
+
+    .left-c {
+        max-width: 300px;
+    }
+
+    .right-c {
+        min-width: 300px;
+    }
+
+    .input-field {
+        font-size: 0.9rem;
+    }
+
+    .input-icons img {
+        width: 20px;
+    }
+
+    .right-c {
+        padding: 1.5em 1em;
+    }
+}
