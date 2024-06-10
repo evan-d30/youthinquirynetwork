@@ -1,0 +1,51 @@
+.program {
+    border-radius: 10px;
+    padding: 2em;
+}
+
+.mentorship {
+    border: 3px solid #7124EF;
+    box-shadow: 5px 8px 2px #7124EF;
+}
+
+.workshops {
+    border: 3px solid #00FFD1;
+    box-shadow: 5px 8px 2px #00FFD1;
+}
+
+.heading-svg {
+    display: grid;
+    place-items: center;
+    gap: 5em;
+}
+
+h4 {
+    font-size: 1.75rem;
+    font-weight: 500;
+}
+
+button {
+    display: flex;
+    gap: 1em;
+    padding: 0.5em 1em;
+    justify-content: center;
+    background-color: white;
+    border-radius: 10px;
+    margin-top: 1em;
+}
+
+.mentorship button {
+    border: 2px solid #7124EF;
+    box-shadow: 5px 8px 2px #7124EF;
+}
+
+.workshops button {
+    border: 2px solid #00FFD1;
+    box-shadow: 3px 3px 1px #00FFD1;
+}
+ 
+h6 {
+    margin-bottom: 1em;
+    font-weight: 500;
+    font-size: 1rem;
+}
