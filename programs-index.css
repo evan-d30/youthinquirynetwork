@@ -159,13 +159,13 @@
   }
   .dreamy-visions {
     position: relative;
-    line-height: 80px;
     font-weight: 600;
     background: linear-gradient(74.5deg, #602cd2, #ea1e49);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     display: inline-block;
     max-width: 100%;
+    font-family: "Lexend", sans-serif;
   }
   .b27e95b9c19d45c8ff1-work-4jpg-icon {
     height: 570.7px;
@@ -457,6 +457,7 @@
     align-items: center;
     justify-content: center;
     text-decoration: none;
+    font-family: "Lexend", sans-serif;
   }
   .link1,
   .margin7 {
@@ -495,7 +496,7 @@
     flex-direction: column;
     justify-content: center;
     padding: 138.1px 50px;
-    box-sizing: border-box;
+    box-sizing: content-box;
     min-width: 506.5px;
   }
   .container5,
@@ -537,6 +538,7 @@
   .to-design-a {
     position: relative;
     font-weight: 500;
+    font-family: "Lexend", sans-serif;
   }
   .objective {
     align-self: stretch;
@@ -588,6 +590,7 @@
     font-size: 22.3px;
     line-height: 30px;
     font-weight: 500;
+    font-family: "Lexend", sans-serif;
   }
   .strategic-discovery {
     flex: 1;
@@ -692,6 +695,7 @@
     align-items: flex-start;
     justify-content: flex-start;
     max-width: 100%;
+    font-family: "Lexend", sans-serif;
   }
   .container22 {
     flex-direction: row;
@@ -928,6 +932,7 @@
     display: flex;
     align-items: flex-start;
     box-sizing: border-box;
+    font-family: "Lexend", sans-serif;
   }
   .container4 {
     width: 1200px;
@@ -944,6 +949,7 @@
     justify-content: center;
     padding: 0 var(--padding-xl);
     max-width: 100%;
+    font-family: "Lexend", sans-serif;
   }
   .background-parent {
     width: 1940px;
@@ -966,6 +972,7 @@
     position: relative;
     line-height: 47px;
     font-weight: 600;
+    font-family: "Lexend", sans-serif;
   }
   .container32,
   .heading-2 {
@@ -1090,6 +1097,8 @@
     position: relative;
     line-height: 162px;
     font-weight: 500;
+    overflow: hidden;
+    white-space: nowrap;
   }
   .heading-3 {
     width: 837px;
@@ -1113,6 +1122,7 @@
     display: inline-block;
     text-decoration: none;
     min-width: 99px;
+    font-family: "Lexend", sans-serif;
   }
   .container39,
   .link2 {
@@ -1167,6 +1177,7 @@
     justify-content: center;
     padding: 0 var(--padding-xl) 0;
     max-width: 100%;
+    font-family: "Lexend", sans-serif;
   }
   .container40 {
     align-self: stretch;
@@ -1194,6 +1205,7 @@
     align-items: center;
     flex-shrink: 0;
     max-width: 100%;
+    font-family: "Lexend", sans-serif;
   }
   .background2,
   .section-parent {
@@ -1202,8 +1214,10 @@
     font-family: var(--forli-templatewebflowio-inter-medium-1554);
   }
   .background2 {
-    position: absolute;
-    top: 825.4px;
+    max-height:  200px;
+    flex: auto;
+    position:relative;
+    top: 0px;
     left: 0;
     background-color: var(--forli-templatewebflowio-black);
     width: 1920px;
@@ -1236,6 +1250,7 @@
     min-height: 1200px;
     line-height: normal;
     letter-spacing: normal;
+    font-family: "Lexend", sans-serif;
   }
   @media screen and (max-width: 1200px) {
     .background {
@@ -1275,6 +1290,8 @@
     .lets-team-up-container {
       font-size: 50px;
       line-height: 97px;
+      overflow: hidden;
+      white-space: nowrap;
     }
     .section-parent {
       height: auto;
@@ -1367,6 +1384,7 @@
     .what-weve-done {
       font-size: var(--font-size-lg);
       line-height: 24px;
+      font-family: "Lexend", sans-serif;
     }
     .related-work {
       font-size: 20px;
