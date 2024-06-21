@@ -1,0 +1,56 @@
+body {
+    margin: 0;
+    line-height: normal;
+  }
+  
+  :root {
+    /* fonts */
+    --forli-templatewebflowio-inter-medium-1554: Inter;
+  
+    /* font sizes */
+    --forli-templatewebflowio-inter-medium-1554-size: 15.5px;
+    --forli-templatewebflowio-inter-medium-1541-size: 15.4px;
+    --font-size-lg: 18px;
+    --font-size-2xl-9: 21.9px;
+    --forli-templatewebflowio-inter-semi-bold-1673-size: 16.7px;
+    --font-size-mini-5: 14.5px;
+    --font-size-base-8: 15.8px;
+    --forli-templatewebflowio-inter-semi-bold-143-upper-size: 14.3px;
+  
+    /* Colors */
+    --forli-templatewebflowio-black: #000;
+    --forli-templatewebflowio-nero: #fff;
+    --forli-templatewebflowio-nero-20: rgba(255, 255, 255, 0.2);
+    --forli-templatewebflowio-nero-65: rgba(255, 255, 255, 0.65);
+    --color-gray-100: rgba(0, 0, 0, 0.19);
+    --forli-templatewebflowio-turbo: #f0f5ff;
+  
+    /* Gaps */
+    --gap-6xl: 25px;
+    --gap-31xl: 50px;
+    --gap-21xl: 40px;
+    --gap-xl: 20px;
+    --gap-51xl: 70px;
+    --gap-16xl: 35px;
+    --gap-mid: 17px;
+    --gap-33xl-1: 52.1px;
+    --gap-7xl: 26px;
+    --gap-3xs: 10px;
+  
+    /* Paddings */
+    --padding-81xl: 100px;
+    --padding-xl: 20px;
+    --padding-11xl: 30px;
+    --padding-5xl: 24px;
+    --padding-mini: 15px;
+    --padding-4xl-1: 23.1px;
+    --padding-3xs: 10px;
+    --padding-mini-1: 14.1px;
+    --padding-9xs: 4px;
+    --padding-12xs-7: 0.7px;
+    --padding-12xs-4: 0.4px;
+    --padding-2xs-5: 10.5px;
+    --padding-9xs-8: 3.8px;
+    --padding-29xl: 48px;
+  }
+  
